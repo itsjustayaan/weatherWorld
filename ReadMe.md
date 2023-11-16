@@ -12,7 +12,7 @@ Before setting up the project, ensure you have the following installed:
 - Yarn package manager
 - Angular CLI
 
-## Installing Yarn (\*\*only if not installed already)
+## Installing Yarn
 
 ```bash
 sudo npm install -g yarn
