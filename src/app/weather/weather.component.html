@@ -1,0 +1,8 @@
+@if (weather) {
+<p><b>Temp: </b>{{ weather.main.temp }} K</p>
+<p><b>Hum: </b>{{ weather.main.humidity }}%</p>
+<p><b>Wind Speed: </b>{{ weather.wind.speed }} Km/Hr</p>
+<p><b>Wind direction: </b>{{ weather.wind.deg }}°</p>
+} @else {
+<p>Loading...</p>
+}

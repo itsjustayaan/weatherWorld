@@ -1,0 +1,41 @@
+// countries.component.scss
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: 500px; // Adjust as needed
+    margin-bottom: 20px; // Space between search box and results
+  }
+  
+  .search-results {
+    width: 100%;
+    max-width: 500px; // Keep consistent with search-container width
+    overflow-y: auto; // Scrollable
+    max-height: 50vh; // Adjust as needed or make dynamic
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  

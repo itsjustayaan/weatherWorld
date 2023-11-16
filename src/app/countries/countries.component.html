@@ -1,0 +1,15 @@
+<!-- countries.component.html -->
+<h1>WeatherWorld</h1>
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchTerm" (keyup)="search()" placeholder="Search for a country...">
+</div>
+
+<div class="search-results">
+  <div *ngIf="filteredCountries && filteredCountries.data.length > 0">
+    <ul>
+      <li *ngFor="let country of filteredCountries.data">
+        <a [routerLink]="country.country">{{ country.country }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
